@@ -122,20 +122,7 @@ public class MainApp extends javax.swing.JFrame {
         jtfAllTotal.setText(Double.toString(Total));
     }
 
-    private void bersih() {
 
-    }
-
-//    public void autoSum() {
-////    menjumlahkan pada kolom 4
-//        int total = 0;
-//        for (int i = 0; i < paymentTable.getRowCount(); i++) {
-//            int amount = Integer.parseInt((String) paymentTable.getValueAt(i, 3));
-//            total += amount;
-//        }
-//        jtfAllTotal.setText(" "+ total);
-//
-//    }
     public void showMessage(String message, int type) {
         if (type == 1) {
             JOptionPane.showMessageDialog(this, message, "Sukses", JOptionPane.INFORMATION_MESSAGE);
@@ -749,6 +736,7 @@ public class MainApp extends javax.swing.JFrame {
             stmn.executeUpdate(query2);
 
             JOptionPane.showMessageDialog(this, "Data berhasil ditambahkan", "Sukses", JOptionPane.INFORMATION_MESSAGE);
+            txtBayar.setText("");
 
         } catch (Exception e) {
             System.out.println("Error" + e.getMessage());

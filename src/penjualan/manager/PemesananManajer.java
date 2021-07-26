@@ -35,7 +35,6 @@ public class PemesananManajer {
                 pemesanan pmsn = new pemesanan();
                 pmsn.setId_pemesanan(Integer.parseInt(rs.getString("id_pemesanan")));
                 pmsn.setId_kue(Integer.parseInt(rs.getString("id_kue")));
-                pmsn.setId_pembayaran(Integer.parseInt(rs.getString("id_pembayaran")));
                 pmsn.setNama_konsumen(rs.getString("Nama_konsumen"));
                 pmsn.setTotal_harga(Integer.parseInt(rs.getString("Total_harga")));
                 pmsn.setTanggal_pemesanan(rs.getString("Tanggal_pemesanan"));

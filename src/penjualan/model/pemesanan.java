@@ -10,10 +10,10 @@ package penjualan.model;
  * @author L
  */
 public class pemesanan {
+
     private int id_pemesanan;
     private int id_konsumen;
     private int id_kue;
-    private int id_pembayaran;
     private String Nama_konsumen;
     private int Total_harga;
     private String Tanggal_pemesanan;
@@ -40,14 +40,6 @@ public class pemesanan {
 
     public void setId_kue(int id_kue) {
         this.id_kue = id_kue;
-    }
-
-    public int getId_pembayaran() {
-        return id_pembayaran;
-    }
-
-    public void setId_pembayaran(int id_pembayaran) {
-        this.id_pembayaran = id_pembayaran;
     }
 
     public String getNama_konsumen() {
